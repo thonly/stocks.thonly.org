@@ -95,7 +95,6 @@ class HbProvider extends HTMLBodyElement {
                         break;
                     case "copy":
                         const response = await this.#copyTokens(data);
-                        console.log(response)
                         if (response.personal) {
                             localStorage.setItem('credentials', JSON.stringify(response));
                             if (data === 'save') await this.#saveTokens(response);

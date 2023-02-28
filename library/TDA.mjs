@@ -3,7 +3,7 @@ import { ALL, STOCKS } from "./stocks.mjs";
 
 export default class TDA {
     mail; //= new Mail();
-    #credentials = JSON.parse(localStorage.getItem('credentials')) || { personal: {}, corporate: {} };
+    #credentials = JSON.parse(sessionStorage.getItem('credentials')) || JSON.parse(localStorage.getItem('credentials')) || { personal: {}, corporate: {} };
 
     constructor(credentials=null) {
         if (credentials) this.#credentials = credentials;

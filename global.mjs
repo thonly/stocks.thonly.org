@@ -1,4 +1,4 @@
-export const ORIGIN = "http://localhost:333/";
+export const ORIGIN = "http://dns.thonly.org:333/"; // if railway quota reached
 // export const ORIGIN = window.location.hostname === '127.0.0.1' ? "http://localhost:333/" : "https://railway.thonly.org/";
 export const THON = window.location.hostname === '127.0.0.1' ? "http://127.0.0.1:5503" : "https://i.thonly.org";
 

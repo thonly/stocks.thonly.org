@@ -1,7 +1,6 @@
 import TDA from "/library/TDA.mjs";
 
 const ORIGIN = "https://railway.thonly.org/", LOCAL = "http://localhost:333/";
-const STOCKS = window.location.hostname === '127.0.0.1' ? LOCAL : ORIGIN;
 
 class HbProvider extends HTMLBodyElement {
     #tda = new TDA();
@@ -97,7 +96,7 @@ class HbProvider extends HTMLBodyElement {
                         const response = await this.#copyTokens(data);
                         if (response.personal) {
                             localStorage.setItem('credentials', JSON.stringify(response));
-                            if (data === 'save') await this.#saveTokens(response);
+                            if (window.location.hostname === 'localhost') await this.#saveTokens(response);
                             window.location.href = '/account';
                         } else this.#submitComponent.copyTokens();
                         break;
@@ -123,7 +122,7 @@ class HbProvider extends HTMLBodyElement {
     }
 
     async #copyTokens(pin) {
-        const response = await fetch(STOCKS, {
+        const response = await fetch(ORIGIN, {
             method: 'POST',
             mode: 'cors',
             headers: {'Content-Type': 'application/json'},

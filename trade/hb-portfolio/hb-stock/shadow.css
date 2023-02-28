@@ -1,0 +1,27 @@
+:host {
+   
+}
+
+legend {
+    font-size: 16pt;
+    color: darkslategray;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.price {
+    background-color: lightskyblue;
+}
+
+.bid {
+    background-color: lightgreen;
+}
+
+.stats {
+    background-color: lightpink;
+}
+

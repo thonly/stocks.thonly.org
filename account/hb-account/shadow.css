@@ -1,0 +1,25 @@
+:host {
+    width: 100%;
+    height: 100%;
+}
+
+.power {
+    background-color: lightgreen;
+}
+
+.margin {
+    background-color: lightpink;
+}
+
+.requirement {
+    background-color: lightskyblue;
+}
+
+fieldset {
+    margin-top: 20px;
+}
+
+legend {
+    font-size: 16pt;
+    color: darkslategray;
+}

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Trade</title>
+        <link rel="icon" href="/login/logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <script src="//unpkg.com/@ungap/custom-elements/es.js"></script>
+        <script src="/library/hb-horoscope/Horoscope.min.js"></script>
+        <script src="index.js" type="module"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-532EHXLL26"></script>
+    </head>
+    <body is="hb-provider">
+        <header>
+            <hb-navbar></hb-navbar>
+        </header>
+        <main>
+            <hb-horoscope>
+                <figure id="horoscope"></figure>
+            </hb-horoscope>
+            <hb-market></hb-market>
+        </main>
+        <footer>
+            <hb-portfolio></hb-portfolio>
+        </footer>
+    </body>
+</html>

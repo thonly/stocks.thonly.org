@@ -1,0 +1,24 @@
+:host {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    background-color: lightgoldenrodyellow;
+    padding: 1px 15px 15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.start {
+    color: green;
+}
+
+.stop {
+    color: red;
+}

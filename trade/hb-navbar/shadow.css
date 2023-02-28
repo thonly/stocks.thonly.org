@@ -1,0 +1,31 @@
+:host {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+menu li {
+    margin: 5px;
+}
+
+label[for="market-bear"], #stop, .negative {
+    color: red;
+}
+
+label[for="market-bull"], #start, .positive {
+    color: green;
+}

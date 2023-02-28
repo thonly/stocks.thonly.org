@@ -137,7 +137,7 @@ export default class TDA {
     async getAccount2(type) {
         const watchlist = {
             corporate: ['AAPL', 'TSLA', 'META'],
-            mom: ['NIO', 'TSLA'],
+            mom: ['NIO'],
             dad: ['FNGU', 'TSLA']
         };
 

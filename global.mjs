@@ -1,4 +1,5 @@
-export const ORIGIN = "https://stocks.thonly.org/"; // "http://dns.thonly.org:333/"
+export const ORIGIN = "https://cryptos.thonly.org/"; // "http://dns.thonly.org:333/"
+export const LOCAL = "http://localhost:333/";
 export const THON = window.location.hostname === '127.0.0.1' ? "http://127.0.0.1:5503" : "https://i.thonly.org";
 
 // not needed

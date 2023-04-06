@@ -1,6 +1,6 @@
 import TDA from "/library/TDA.mjs";
 
-const ORIGIN = "https://railway.thonly.org/", LOCAL = "http://localhost:333/";
+const ORIGIN = "https://cryptos.thonly.org/", LOCAL = "http://localhost:333/";
 
 class HbProvider extends HTMLBodyElement {
     #tda = new TDA();
